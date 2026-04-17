@@ -201,12 +201,36 @@ footer {
 }
 
 /* Sección Llamada a la Acción (CTA) */
+/* Actualiza esto en tu styles.css para la sección CTA con imagen */
 .cta-section {
     background: linear-gradient(135deg, #161b22 0%, #0b0e14 100%);
-    padding: 50px;
+    padding: 0; /* Quitamos padding para que la imagen cubra todo */
     border-radius: 15px;
     border: 1px dashed #00d4ff;
-    margin: 40px 0;
+    overflow: hidden; /* Para que la imagen no se salga */
+    display: flex;
+    flex-wrap: wrap; /* Para que en móviles se apilen */
+    align-items: center;
+    text-align: left; /* Volvemos al texto alineado a la izquierda */
+}
+
+.cta-content {
+    flex: 1 1 50%; /* Ocupa el 50% del ancho */
+    padding: 50px; /* Padding interno */
+}
+
+.cta-image-wrapper {
+    flex: 1 1 50%; /* Ocupa el 50% del ancho */
+    height: 100%; /* Cubre el alto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-image-wrapper img {
+    max-width: 100%; /* Se adapta */
+    height: auto;
+    object-fit: cover; /* Recorte inteligente */
 }
 
 .btn-primary {
