@@ -1,8 +1,62 @@
+/* Configuración General */
 body {
-    font-family: Arial;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0e14; /* Negro azulado profundo */
+    color: #e0e0e0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
+.container {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Encabezado */
 h1 {
-    color: blue;
+    color: #00d4ff; /* Celeste brillante */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #8892b0;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Integrantes */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #161b22; /* Negro grisáceo */
+    border: 1px solid #30363d;
+    border-top: 4px solid #00d4ff; /* Acento celeste */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.15);
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #00d4ff;
 }
